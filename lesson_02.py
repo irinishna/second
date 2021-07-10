@@ -1,9 +1,13 @@
 password = "q1w2e3r4"
-while x <= 3 :
+x = 3
+while x > 0 :
     P = input("Enter password:")
-    x += 1
+    x -= 1
     if P == password :
         print("Access granted")
         break
+    elif x == 0 :
+        print("You have no attempts left")
     else :
-        print("Access denied, attempts left:", )
+        print("Access denied, attempts left:", x)
+
