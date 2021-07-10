@@ -1,6 +1,8 @@
-P = input("Enter password:")
-if len(P) < 6 :
-    print("False")
-elif len(P) >= 6 :
-    print("True")
-    #какой-то коммент
+password = "q1w2e3r4"
+while True :
+    P = input("Enter password:")
+    if P == password :
+        print("Access granted")
+        break
+    else :
+        print("Access denied")
